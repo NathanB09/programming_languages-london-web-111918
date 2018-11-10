@@ -6,6 +6,7 @@ def reformat_languages(languages)
   languages.each do |prog_style, langs|
     langs.each do |lang_name, lang_type|
       new_hash[lang_name] = lang_type
+      binding.pry
       if new_hash.include?(lang_name) && new_hash[lang_name].include?(:style)
         new_hash[lang_name][:style] << prog_style
       else
@@ -14,7 +15,7 @@ def reformat_languages(languages)
     end
   end
   new_hash
-  binding.pry
+  
 end
 
 test_hash = {
