@@ -9,8 +9,8 @@ def reformat_languages(languages)
       if new_hash.include?(lang_name) && new_hash[lang_name].include?(:style)
         new_hash[lang_name][:style] << prog_style
       else
-        binding.pry
         new_hash[lang_name][:style] = [prog_style]
+        binding.pry
       end
     end
   end
