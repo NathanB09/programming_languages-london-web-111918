@@ -3,11 +3,14 @@ require "pry"
 def reformat_languages(languages)
   # your code here
   new_hash = {}
-  languages.each do |style, langs|
+  style_array = []
+  languages.each do |prog_style, langs|
     langs.each do |lang_name, lang_type|
       new_hash[lang_name] = lang_type
-      # if langs.include?
-      binding.pry
+      if langs.include?(lang_name)
+        style_array << prog_style
+        new_hash[lang_name] = {style: style_array}
+      end
     end
   end
   binding.pry
