@@ -9,7 +9,7 @@ def reformat_languages(languages)
       new_hash[lang_name] = lang_type
       if langs.include?(lang_name)
         style_array << prog_style
-        lang_name[:style] = style_array
+        new_hash[lang_name][:style] = style_array
       end
     end
   end
