@@ -12,7 +12,7 @@ def reformat_languages(languages)
       if languages[:oo].include?(lang_name) && languages[:functional].include?(lang_name)
         new_hash[lang_name][:style] << prog_style
       else
-        new_hash[lang_name][:style] << prog_style
+        new_hash[lang_name][:style] = [prog_style]
       end
     end
   end
