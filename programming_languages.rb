@@ -6,12 +6,9 @@ def reformat_languages(languages)
   languages.each do |prog_style, langs|
     langs.each do |lang_name, lang_type|
       new_hash[lang_name] = lang_type
-        style_array = []
+      new_hash[lang_name][:style] = [prog_style]
       if new_hash.include?(lang_name) && langs.include?(lang_name)
-        style_array << prog_style
-        new_hash[lang_name][:style] = style_array
-      else
-        new_hash[lang_name][:style] = style_array
+        new_hash[lang_name][:style] << prog_style
       end
     end
   end
