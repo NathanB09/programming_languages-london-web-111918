@@ -25,4 +25,4 @@ test_hash = {
   }
 }
 
-reformat_languages(test)
+reformat_languages(test_hash)
