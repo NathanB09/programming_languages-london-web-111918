@@ -3,8 +3,8 @@ require "pry"
 def reformat_languages(languages)
   # your code here
   new_hash = {}
-  style_array = []
   languages.each do |prog_style, langs|
+    style_array = []
     langs.each do |lang_name, lang_type|
       new_hash[lang_name] = lang_type
       if langs.include?(lang_name)
