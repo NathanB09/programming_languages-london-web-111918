@@ -13,22 +13,21 @@ def reformat_languages(languages)
       end
     end
   end
-  binding.pry
 end
 
-test_hash = {
-  :oo => {
-    :ruby => {:type => "interpreted"},
-    :javascript => {:type => "interpreted"},
-    :python => {:type => "interpreted"},
-    :java => {:type => "compiled"}
-  },
-  :functional => {
-    :clojure => {:type => "compiled"},
-    :erlang => {:type => "compiled"},
-    :scala => {:type => "compiled"},
-    :javascript => {:type => "interpreted"}
-  }
-}
-
-reformat_languages(test_hash)
+# test_hash = {
+#   :oo => {
+#     :ruby => {:type => "interpreted"},
+#     :javascript => {:type => "interpreted"},
+#     :python => {:type => "interpreted"},
+#     :java => {:type => "compiled"}
+#   },
+#   :functional => {
+#     :clojure => {:type => "compiled"},
+#     :erlang => {:type => "compiled"},
+#     :scala => {:type => "compiled"},
+#     :javascript => {:type => "interpreted"}
+#   }
+# }
+# 
+# reformat_languages(test_hash)
