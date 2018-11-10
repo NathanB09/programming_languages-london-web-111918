@@ -10,7 +10,7 @@ def reformat_languages(languages)
       if new_hash[lang_name][:style].size == 1 && langs.include?(lang_name)
         new_hash[lang_name][:style] << prog_style
       else
-        new_hash[lang_name][:style] << []
+        new_hash[lang_name][:style] << prog_style
       end
     end
   end
