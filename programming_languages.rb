@@ -13,6 +13,8 @@ def reformat_languages(languages)
       end
     end
   end
+  new_hash
+  binding.pry
 end
 
 # test_hash = {
@@ -29,5 +31,5 @@ end
 #     :javascript => {:type => "interpreted"}
 #   }
 # }
-# 
+#
 # reformat_languages(test_hash)
