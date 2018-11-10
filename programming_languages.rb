@@ -7,11 +7,12 @@ def reformat_languages(languages)
   languages.each do |prog_style, langs|
     langs.each do |lang_name, lang_type|
       new_hash[lang_name] = lang_type
-      testing = languages[:oo].include?(lang_name) && languages[:functional].include?(lang_name)
+      testing = languages[:oo].include?(:javascript) && languages[:functional].include?(:javascript)
+      binding.pry
     end
   end
   new_hash
-  binding.pry
+
 end
 
 test_hash = {
