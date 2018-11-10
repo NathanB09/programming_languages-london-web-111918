@@ -3,8 +3,7 @@ require "pry"
 def reformat_languages(languages)
   # your code here
   new_hash = {}
-  test_value = languages[:oo].fetch(:javascript)
-  binding.pry
+
   languages.each do |prog_style, langs|
     langs.each do |lang_name, lang_type|
       new_hash[lang_name] = lang_type
@@ -17,7 +16,7 @@ def reformat_languages(languages)
     end
   end
   new_hash
-
+  binding.pry
 end
 
 test_hash = {
