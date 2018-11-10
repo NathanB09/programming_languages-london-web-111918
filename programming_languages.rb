@@ -9,7 +9,7 @@ def reformat_languages(languages)
     langs.each do |lang_name, lang_type|
       new_hash[lang_name] = lang_type
       new_hash[lang_name][:style] = []
-      if new_hash[lang_name][:style].size == 1 && langs.include?(lang_name)
+      if languages[:oo].include?(lang_name) && languages[:functional].include?(lang_name)
         new_hash[lang_name][:style] << prog_style
       else
         new_hash[lang_name][:style] << prog_style
