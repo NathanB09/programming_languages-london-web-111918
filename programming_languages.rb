@@ -3,10 +3,11 @@ require "pry"
 def reformat_languages(languages)
   # your code here
   new_hash = {}
-  all_langs = languages.collect {|prog_style, langs| langs}
+  all_langs = languages.collect {|prog_style, langs| langs[:style] = []}
   languages.each do |prog_style, langs|
     langs.each do |lang_name, lang_type|
       new_hash[lang_name] = lang_type
+      new_hash[lang_name][:style] = []
     end
   end
   new_hash
