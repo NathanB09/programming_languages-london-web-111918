@@ -4,10 +4,11 @@ def reformat_languages(languages)
   # your code here
   new_hash = {}
   languages.each do |style, langs|
-    langs.each do |name, type|
-      binding.pry
+    langs.each do |lang_name, lang_type|
+      new_hash[lang_name] = lang_type
     end
   end
+  binding.pry
 end
 
 test_hash = {
