@@ -10,7 +10,7 @@ def reformat_languages(languages)
   end
 end
 
-test_hash =     {
+test_hash = {
       :oo => {
         :ruby => {
           :type => "interpreted"
